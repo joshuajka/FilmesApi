@@ -8,6 +8,8 @@ namespace FilmesApi.Models
 {
     public class Filme
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Título é um campo obrigatório")]
         //[RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8}$",ErrorMessage = "Password must meet requirements")]
         public string Titulo { get; set; }
