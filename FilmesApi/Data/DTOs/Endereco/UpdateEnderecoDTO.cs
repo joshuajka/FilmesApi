@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FilmesApi.Data.DTOs.Endereco
+namespace FilmesApi.Data.DTOs
 {
     public class UpdateEnderecoDTO
     {

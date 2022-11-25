@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using FilmesApi.Data.DTOs;
-using FilmesApi.Data.DTOs.Endereco;
 using FilmesApi.Models;
 using System;
 using System.Collections.Generic;

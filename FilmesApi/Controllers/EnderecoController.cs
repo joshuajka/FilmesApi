@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 
 namespace FilmesApi.Controllers
 {
-    public class EnderecoController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class EnderecoController : ControllerBase
     {
         private AppDbContext _context;
         private IMapper _mapper;
@@ -40,11 +42,6 @@ namespace FilmesApi.Controllers
                 return Ok(endereocoDTO);
             }
             return NotFound();
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
 
