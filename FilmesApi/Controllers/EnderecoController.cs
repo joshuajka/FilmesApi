@@ -44,6 +44,19 @@ namespace FilmesApi.Controllers
             return NotFound();
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult DeletaEndereco(int id)
+        {
+            Endereco endereco = _context.Enderecos.FirstOrDefault(endereco => endereco.Id == id);
+            if (endereco == null)
+            {
+                return NotFound();
+            }
+            _context.Remove(endereco);
+            _context.SaveChanges();
+            return NoContent();
+        }
+
 
     }
 }

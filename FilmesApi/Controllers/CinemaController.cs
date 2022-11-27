@@ -44,5 +44,18 @@ namespace FilmesApi.Controllers
             return NotFound();
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult DeletaCinema(int id)
+        {
+            Cinema cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.Id == id);
+            if (cinema == null)
+            {
+                return NotFound();
+            }
+            _context.Remove(cinema);
+            _context.SaveChanges();
+            return NoContent();
+        }
+
     }
 }
