@@ -1,13 +1,15 @@
-﻿using System;
+﻿using FilmesApi.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FilmesApi.Data.DTOs.Gerente
+namespace FilmesApi.Data.DTOs
 {
     public class ReadGerenteDTO
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        public object Cinemas { get; set; }
     }
 }

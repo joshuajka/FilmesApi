@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace FilmesApi.Models
@@ -20,7 +21,7 @@ namespace FilmesApi.Models
         public int EnderecoId { get; set; }
 
         public virtual Gerente Gerente { get; set; }
-
+        
         public int GerenteId { get; set; }
     }
 }
